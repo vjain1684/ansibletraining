@@ -1,0 +1,13 @@
+---
+- hosts: linux
+  vars:
+    training:
+      topic: ansible
+      learner: vishal
+      lab: aws
+  tasks:
+  - name: print dict variale
+    debug:
+     msg: "{{ training }}"
+
+      

@@ -1,0 +1,15 @@
+---
+- hosts: linux
+  tasks:
+  - name: testing command
+    command: echo $HOSTNAME
+    register: output
+  - debug: msg="{{output.stdout}}"
+  - name: testing shell
+    shell: echo $HOSTNAME
+    register: output
+  - debug: msg="{{output.stdout}}"
+
+
+
+

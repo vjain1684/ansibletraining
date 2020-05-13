@@ -1,0 +1,14 @@
+---
+- hosts: linux
+  vars:
+    training:
+      topic: ansible
+      learner: vishal
+      lab: aws
+  tasks:
+  - name: Loop Dict Variable
+    debug:
+      msg:  "Key is {{ item.key }} and value  is {{ item.value }}" 
+    with_dict: "{{ training }}"
+
+     
