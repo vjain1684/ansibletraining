@@ -1,7 +1,7 @@
 ---
   tasks:
-    -  name: create file
-       file: 
-        path: /home/ansible/testfile
-        state: touch
+  - name: ensure apache is at the latest version
+    file:
+      name: /home/ansible/testfile
+      state: touch
 
