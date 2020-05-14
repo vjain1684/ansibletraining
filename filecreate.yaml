@@ -1,5 +1,5 @@
 ---
-- hosts: centos
+- hosts: 3.15.181.248
   tasks:
   - name: ensure apache is at the latest version
     file:
